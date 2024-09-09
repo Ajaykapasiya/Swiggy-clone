@@ -1,11 +1,13 @@
 
+import Header from './components/Header';
+
+
+
 function App() {
   return (
-<>
-<div className="text-4xl">
-  Hello react
-</div>
-</>
+    <>
+      <Header />
+    </>
   );
 }
 
