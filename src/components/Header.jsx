@@ -12,7 +12,7 @@ function Header() {
   }
 
   const hideSideMenu = () => {
-    setToggle(false)
+    setToggle(false);
   }
 
   return (
