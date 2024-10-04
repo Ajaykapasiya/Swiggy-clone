@@ -26,9 +26,30 @@ function Header() {
   const links = [
 
     {
-      icon:
-      name:
+      icon: <FaSearch />,
+      name: "Search"
+    },
+
+    {
+      icon: <CiDiscount1 />,
+      name: "Offers"
+    },
+
+    {
+      icon: <IoHelpBuoyOutline />,
+      name: "Help"
+    },
+
+    {
+      icon: <IoPersonAdd />,
+      name: "Sign in "
+    },
+
+    {
+      icon: <FaCartArrowDown />,
+      name: "Cart"
     }
+
   ]
 
   return (
@@ -61,30 +82,18 @@ function Header() {
           </div>
           <nav className='flex list-none gap-4 ml-auto font-semibold text-[18px]'>
 
-            <li className='flex items-center gap-3 '>
-              <FaSearch />
-              Search
-            </li>
+            {
+              links.map(
+                (link, index) => {
+                  return <li key = {index} className='flex hover:text-[#fc8019] items-center gap-3 '>
+                    {link.icon}
+                    {link.name}
+                  </li>
+                }
+              )
+            }
 
-            <li className='flex items-center gap-3 '>
-              <CiDiscount1 />
-              Offers
-            </li>
 
-            <li className='flex items-center gap-3 ' >
-              <IoHelpBuoyOutline />
-              Help
-            </li>
-
-            <li  className='flex items-center gap-3 '>
-              <IoPersonAdd />
-              Sign in
-            </li>
-
-            <li  className='flex items-center gap-3 '>
-              <FaCartArrowDown/>
-              Cart
-            </li>
 
           </nav>
 
