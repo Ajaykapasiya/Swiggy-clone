@@ -83,13 +83,7 @@ function Header() {
           <nav className='flex list-none gap-4 ml-auto font-semibold text-[18px]'>
 
             {
-              links.map(
-                (link, index) => {
-                  return <li key = {index} className='flex hover:text-[#fc8019] items-center gap-3 '>
-                    {link.icon}
-                    {link.name}
-                  </li>
-                }
+              l
               )
             }
 
