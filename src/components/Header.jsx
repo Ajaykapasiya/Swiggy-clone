@@ -82,10 +82,7 @@ function Header() {
           </div>
           <nav className='flex list-none gap-4 ml-auto font-semibold text-[18px]'>
 
-            {
-              l
-              )
-            }
+          
 
 
 
