@@ -55,19 +55,7 @@ function Header() {
   return (
 
     <>
-      <div className='black-overlay w-full h-full fixed duration-500' onClick={hideSideMenu} style={{
-        opacity: toggle ? 1 : 0,
-        visibility: toggle ? "visible" : "hidden"
-      }}>
-
-        <div onClick={(e) => {
-          e.stopPropagation();
-        }} className='w-[400px] bg-white h-full absolute  duration-[300ms]'
-
-          style={{
-            left: toggle ? '0%' : '-100%'
-          }}
-        ></div>
+      
 
       </div>
 
