@@ -86,7 +86,7 @@ function Header() {
             {
               links.map(
                 (link, index) => {
-                  return <li key = {index} className='flex hover:text-[#fc8019] items-center gap-3 '>
+                  return <li key = {index} className='cursor-pointer flex hover:text-[#fc8019] items-center gap-3 '>
                     {link.icon}
                     {link.name}
                     <sup>{link.sup}</sup>
