@@ -1,5 +1,5 @@
 import React from 'react'
-import { HiArrowSmRight , HiArrowSmLeft } from "react-icons/hi";
+import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
 export default function Category() {
     return (
         <div className='max-w-[1200px] mx-auto ' >
