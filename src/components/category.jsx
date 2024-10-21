@@ -37,7 +37,7 @@ useEffect(
 
                             return (
                                 <div key={index} className='w-[150px] shrink-0'>
-                                   <img src={"http://127.0.0.1:5000/images/${cat.image}" + cat.image} alt='' />
+                                   <img src={"http://127.0.0.1:5000/data/public/images/${cat.image}" + cat.image} alt={''}/>
                                 </div>
                             )
 
