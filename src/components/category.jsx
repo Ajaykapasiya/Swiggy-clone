@@ -21,6 +21,7 @@ useEffect(
 )
 
 const nextSlide = () => {
+    if(categories.length - 8 == slide) return false;
     setSlide(slide+3);
 }
 
