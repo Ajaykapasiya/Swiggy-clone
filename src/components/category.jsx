@@ -5,7 +5,7 @@ export default function Category() {
 const[categories , setCategory] = useState([]);
 
 const fetchCategory = async () => {
-const response = await fetch(" http://127.0.0.1:5500/data/categories");
+const response = await fetch("http://127.0.0.1:5500/data/category.json");
 const data = await response.json();
 setCategory(data);
 
@@ -29,15 +29,21 @@ useEffect(
 
             </div>
 
-            <div className='flex'>
+            <div className='flex border border-red-600 overflow-hidden'>
 
                 {
                     categories.map(
                         (cat , index) => { 
 
                             return (
-                                <div key={index} className='w-[150px] shrink-0'>
-                                   <img src={"http://127.0.0.1:5000/data/public/images/${cat.image}" + cat.image} alt={''}/>
+                                <div style={{
+
+                                   transform:`translateX(0%)` 
+
+                                    }}
+                                key={index} className='w-[150px] shrink-0 duration-500'>
+                                 <img src={`http://127.0.0.1:5500/public/images/${cat.image}`} alt={cat.name} />
+                                 <p>{cat.name}</p>
                                 </div>
                             )
 
