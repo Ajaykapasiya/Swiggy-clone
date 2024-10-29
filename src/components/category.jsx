@@ -26,7 +26,8 @@ const nextSlide = () => {
 }
 
 const prevSlide = () => {
-setSlide(slide-3);
+    if(slide == 0) return false
+ setSlide(slide-3);
 }
 
     return (
@@ -43,7 +44,7 @@ setSlide(slide-3);
 
             </div>
 
-            <div className='flex border border-red-600 overflow-hidden'>
+            <div className='flex border border-black-600 overflow-hidden'>
 
                 {
                     categories.map(
@@ -62,11 +63,4 @@ setSlide(slide-3);
                             )
 
                         }
-                    )
-                }
-            </div>
-
-        </div>
-
-    )
-}
+ 
