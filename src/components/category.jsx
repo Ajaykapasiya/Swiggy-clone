@@ -60,4 +60,14 @@ const prevSlide = () => {
                                  <img src={`http://127.0.0.1:5500/public/images/${cat.image}`} alt={cat.name} />
                                  <p>{cat.name}</p>
                                 </div>
-        
+                            )
+
+                        }
+                    )
+                }
+            </div>
+<hr className='my-4 border-[2px]'/>
+        </div>
+
+    )
+}
