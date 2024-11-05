@@ -18,7 +18,7 @@ useEffect (
 
   return (
     <div>
-       <div className='max-w-[1200px] mx-auto ' >
+       <div className=' max-w-[1200px] mx-auto ' >
             <div className='flex items-center justify-between'>
                 <div className='text-[30px] font-bold '>Top Resturant in Greater Noida </div>
                 <div className='flex'>
@@ -31,8 +31,13 @@ useEffect (
 
             </div>
        </div>
-       <div className = 'flex' >
+
+       <div className =  'flex gap-4 item-centre'>
                 <Card/>
+                <Card/>
+
+                <Card/>
+
             </div>
     </div>
   ) 
