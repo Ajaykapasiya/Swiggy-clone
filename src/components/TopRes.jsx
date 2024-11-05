@@ -31,9 +31,9 @@ useEffect (
 
             </div>
        </div>
-       <div className = 'flex'>
+       <div className = 'flex' >
                 <Card/>
             </div>
     </div>
-  )
+  ) 
 }
