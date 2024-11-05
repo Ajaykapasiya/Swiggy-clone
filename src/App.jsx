@@ -1,7 +1,7 @@
 
 import Header from './components/Header';
 import Category from './components/Category';
-
+import TopRes from './components/TopRes';
 
 
 function App() {
@@ -9,8 +9,10 @@ function App() {
     <>
       <Header />
       <Category />
+      <TopRes />
     </>
   );
+
 }
 
 export default App;

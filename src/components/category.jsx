@@ -66,7 +66,7 @@ const prevSlide = () => {
                     )
                 }
             </div>
-<hr className='my-4 border-[2px]'/>
+<hr className='my-6 border-[2px]'/>
         </div>
 
     )
