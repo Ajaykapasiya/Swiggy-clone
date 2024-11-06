@@ -33,7 +33,7 @@ function Header() {
     {
       icon: <CiDiscount1 />,
       name: "Offers",
-      sup:" New"
+      sup: " New"
     },
 
     {
@@ -73,7 +73,7 @@ function Header() {
       </div>
 
 
-      <header className="p-[15px] shadow xl">
+      <header className="p-[15px] shadow xl text-[#686b78] sticky top-0 bg-white z-[9999]">
         <div className='max-w-[1200px] mx-auto   flex items-center'>
           <div className='w-[80px]  '>
             <img src="images/logo.png" className='w-full' alt="" />
@@ -81,12 +81,12 @@ function Header() {
           <div className=''>
             <span className=' font-bold  border-b-[3px]  '>Greater Noida</span> , Uttar pardesh  <PiCaretDownBold onClick={showSideMenu} fontSize={25} className='inline text- text-[#ff5200]' />
           </div>
-          <nav className='flex list-none gap-4 ml-auto font-semibold text-[18px]'>
+          <nav className='hidden md:flex list-none gap-4 ml-auto font-semibold text-[18px]'>
 
             {
               links.map(
                 (link, index) => {
-                  return <li key = {index} className='cursor-pointer flex hover:text-[#fc8019] items-center gap-3 '>
+                  return <li key={index} className='cursor-pointer flex hover:text-[#fc8019] items-center gap-3 '>
                     {link.icon}
                     {link.name}
                     <sup>{link.sup}</sup>

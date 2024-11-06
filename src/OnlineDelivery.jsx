@@ -17,19 +17,19 @@ export default function OnlineDelivery() {
         }, []
     )
     return (
-        <div className=' max-w-[1200px] mx-auto  ' >
+        <div className=' max-w-[1200px] mx-auto px-2  ' >
             <div className='flex my-5 items-center justify-between'>
                 <div className='text-[30px] font-bold '>Restaurants with online food delivery in Noida</div>
 
 
             </div>
 
-            <div className='grid grid-cols-4 gap-3' >
+            <div className='  md:grid grid-cols-4 gap-3' >
                 {
                     data.map(
                         (d,i) => {
 
-                      return <Card{...d}/>
+                      return <Card  {...d}/>
 
                         }
                     )
