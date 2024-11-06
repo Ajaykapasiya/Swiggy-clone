@@ -20,6 +20,12 @@ export default function Card(props) {
                 <Star className = 'inline'/> {props.rating}
              <span className='ml-3 '>  {props.minTime} - {props.maxTime} mins </span> 
             </div>
+
+            <div>
+                {props.name}
+                <br />
+                {props.place}
+            </div>
         </div>
     )
 }
