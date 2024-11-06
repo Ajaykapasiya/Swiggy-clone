@@ -17,15 +17,17 @@ export default function Card(props) {
                 {props.title}
             </div>
             <div>
-                <Star/>
+                <Star className = 'inline'/> {props.rating}
+             <span className='ml-3 '>  {props.minTime} - {props.maxTime} mins </span> 
             </div>
         </div>
     )
 }
 
-const Star = () => {
+const Star = (props) => {
     return(
     <svg
+    className={props.className}
   width={20}
   height={20}
   viewBox="0 0 20 20"
