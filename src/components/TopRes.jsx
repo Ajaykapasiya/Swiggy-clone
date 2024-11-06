@@ -19,7 +19,7 @@ useEffect (
   return (
     <div>
        <div className=' max-w-[1200px] mx-auto ' >
-            <div className='flex items-center justify-between'>
+            <div className='flex my-5 items-center justify-between'>
                 <div className='text-[30px] font-bold '>Top Resturant in Greater Noida </div>
                 <div className='flex'>
                     <div className=' cursor-pointer flex justify-center items-center w-[32px] h-[30px] bg-[#02060c26] rounded-full mx-2' >
@@ -30,15 +30,14 @@ useEffect (
                 </div>
 
             </div>
-       </div>
 
-       <div className =  'flex gap-4 item-centre'>
+            <div className =  'flex '>
                 <Card/>
-                <Card/>
-
-                <Card/>
+                
 
             </div>
+
+       </div>
     </div>
   ) 
 }
