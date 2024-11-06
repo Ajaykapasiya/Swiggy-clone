@@ -21,18 +21,18 @@ export default function TopRes() {
     )
 
     const nextSlide = () => {
-        if (data.length - 8 == slide) return false;
-        setSlide(slide + 3);
+        if (data.length - 4 === slide) return false;
+        setSlide(slide + 2);
     }
 
     const prevSlide = () => {
-        if (slide == 0) return false
-        setSlide(slide - 3);
+        if (slide === 0) return false
+        setSlide(slide - 2);
     }
 
     return (
         
-            <div className=' max-w-[1200px] mx-auto mb-4 ' >
+            <div className=' max-w-[1200px] mx-auto ' >
                 <div className='flex my-5 items-center justify-between'>
                     <div className='text-[30px] font-bold '>Top restaurant chains in Noida
                     </div>
@@ -46,7 +46,7 @@ export default function TopRes() {
 
                 </div>
 
-                <div className='flex gap-3 overflow-hidden'>
+                <div className='flex gap-9 overflow-hidden'>
                    {
                     data.map(
                         (d , i) => {
@@ -57,6 +57,7 @@ export default function TopRes() {
                     
                   
                 </div>
+                <hr className='my-6 border-[2px]'/>
 
             </div>
        
