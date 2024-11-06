@@ -31,8 +31,8 @@ export default function TopRes() {
     }
 
     return (
-        <div>
-            <div className=' max-w-[1200px] mx-auto ' >
+        
+            <div className=' max-w-[1200px] mx-auto mb-4 ' >
                 <div className='flex my-5 items-center justify-between'>
                     <div className='text-[30px] font-bold '>Top restaurant chains in Noida
                     </div>
@@ -59,6 +59,6 @@ export default function TopRes() {
                 </div>
 
             </div>
-        </div>
+       
     )
 }
